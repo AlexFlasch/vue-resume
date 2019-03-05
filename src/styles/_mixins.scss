@@ -1,0 +1,18 @@
+@import '_variables.scss';
+
+@mixin title-underline($size: 10px) {
+  position: relative;
+  border-bottom: 2px solid $accent-color;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -$size;
+    bottom: -2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $size 0 0 $size;
+    border-color: transparent transparent transparent #90a9b7;
+  }
+}
