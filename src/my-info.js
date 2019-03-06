@@ -10,6 +10,7 @@ export default {
   experience: [
     {
       company: 'Freelance Consultant',
+      location: 'Seattle, WA',
       position: 'Web Developer',
       timeperiod: 'September 2017 - Ongoing',
       description:
@@ -38,16 +39,31 @@ export default {
   skills: [
     {
       name: 'Languages (Spoken)',
-      description: 'English (mother tongue), French (semi-fluent)'
+      points: ['English (mother tongue)', 'French(semi - fluent)']
     },
     {
       name: 'Languages (Programming)',
-      description: 'Javascript (ES6+), HTML5, CSS3/Sass, C#, MSSQL, Java'
+      points: [
+        'Javascript (ES6+)',
+        'HTML5',
+        'CSS3 / Sass',
+        'C#',
+        'MSSQL',
+        'Java'
+      ]
     },
     {
       name: 'Software',
-      description:
-        'Webpack, Git, Chrome Devtools, Visual Studio, VSCode, React.js, Vue.js, AngularJS'
+      points: [
+        'Webpack',
+        'Git',
+        'Chrome Devtools',
+        'Visual Studio',
+        'VSCode',
+        'React.js',
+        'Vue.js',
+        'AngularJS'
+      ]
     }
   ],
   references: [
@@ -65,9 +81,10 @@ export default {
     }
   ],
   contact: {
+    address: '312 2nd Ave W, Seattle, WA 98119',
     email: 'alexanderflasch@email.com',
     phone: '(920) 266-2201',
-    website: 'http://alexflasch.com',
+    website: 'https://alexflasch.com',
     github: 'AlexFlasch'
   }
 };

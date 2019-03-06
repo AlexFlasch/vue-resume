@@ -1,9 +1,6 @@
 @import '_variables.scss';
 
-@mixin title-underline($size: 10px) {
-  position: relative;
-  border-bottom: 2px solid $accent-color;
-
+@mixin border-triangle($size, $color: $accent-color) {
   &:after {
     content: '';
     position: absolute;
@@ -15,4 +12,25 @@
     border-width: $size 0 0 $size;
     border-color: transparent transparent transparent #90a9b7;
   }
+}
+
+@mixin section-underline($size: 15px, $width: 35%, $color: $accent-color) {
+  position: relative;
+  width: $width;
+  padding: 0 15px;
+  margin: 0;
+  border-bottom: 2px solid $accent-color;
+
+  @include border-triangle($size, $color);
+}
+
+@mixin subsection-underline($size: 10px, $color: $accent-color) {
+  position: relative;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, transparent 10%, $color 100%) 1 100%;
+  border-image-slice: 1;
+
+  @include border-triangle($size, $color);
 }

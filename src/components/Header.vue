@@ -1,20 +1,28 @@
 <template>
   <header>
-    <h1 class="name">{{ info.name.first }} {{ info.name.last }}</h1>
-    <span class="position">
-      {{ info.position }}
-    </span>
+    <div class="main-details">
+      <h1 class="name">{{ info.name.first }} {{ info.name.last }}</h1>
+      <span class="position">
+        {{ info.position }}
+      </span>
+      <span class="address">
+        {{ info.contact.address }}
+      </span>
+    </div>
     <div class="contact-details">
-      <span class="website">
+      <a class="website" :href="info.contact.website">
         {{ info.contact.website }}
-      </span>
-      <span class="email">
+      </a>
+      <a class="email" :href="`mailto:${info.contact.email}`">
         {{ info.contact.email }}
-      </span>
-      <span class="github">
+      </a>
+      <a class="github" :href="`https://github.com/${info.contact.github}`">
         <i class="la la-github"></i>
         {{ info.contact.github }}
-      </span>
+      </a>
+      <a class="phone" :href="`tel:${info.contact.phone}`">
+        {{ info.contact.phone }}
+      </a>
     </div>
   </header>
 </template>
@@ -33,12 +41,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/_base.scss';
 @import '../styles/_mixins.scss';
 @import '../assets/css/line-awesome.css';
 
 header {
   padding-top: 10px;
-  width: 50%;
+  max-width: 95%;
+}
+
+.main-details {
+  position: relative;
 }
 
 .name {
@@ -54,9 +67,17 @@ header {
   font-size: 1.25em;
 }
 
+.address {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
 .contact-details {
   $font-size: 0.95em;
-  @include title-underline($font-size);
+  @include section-underline($font-size);
 
   display: flex;
   justify-content: space-between;
