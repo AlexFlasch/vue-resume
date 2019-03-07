@@ -5,7 +5,7 @@
     </h2>
     <div class="skills">
       <div v-for="(skill, index) in info.skills" :key="index">
-        <span>{{ skill.name }}</span>
+        <span class="skill-name">{{ skill.name }}</span>
         <ul>
           <li v-for="(point, index) in skill.points" :key="index">
             {{ point }}
@@ -47,9 +47,10 @@ h2 {
     width: calc(100% / #{$number-of-subsections});
   }
 
-  span {
+  .skill-name {
     @include subsection-underline(10px);
     padding: 0 10px;
+    font-weight: bold;
   }
 
   ul {

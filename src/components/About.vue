@@ -22,7 +22,6 @@ export default {
   },
   computed: {
     aboutInfoByNewline() {
-      console.log(this);
       return this.info.about.split('\n');
     }
   }

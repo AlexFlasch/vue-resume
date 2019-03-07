@@ -1,25 +1,22 @@
 <template>
   <div id="resume">
-    <Page v-for="(page, index) in pages" :key="index">
-      <component v-bind:is="page"></component>
-    </Page>
+    <Page />
   </div>
 </template>
 
 <script>
 import Page from './Page.vue';
 
-import pages from './pages';
+// import custom directives
+// ignore no-unused-vars as directives are automatically consumed by Vue
+/* eslint-disable no-unused-vars */
+import PageBreakable from './directives/page-breakable';
+/* eslint-enable no-unused-vars */
 
 export default {
   name: 'app',
   components: {
     Page
-  },
-  data() {
-    return {
-      pages
-    };
   }
 };
 </script>

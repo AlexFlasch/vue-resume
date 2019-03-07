@@ -1,5 +1,40 @@
+@import '_variables.scss';
+
 a,
 a:link {
   font: inherit;
   color: inherit;
+}
+
+.inline-separator {
+  position: relative;
+  display: inline-block;
+  min-width: 10px;
+  min-height: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 5px 3px 0;
+    border-color: transparent $accent-color transparent transparent;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 0 3px 5px;
+    border-color: transparent transparent transparent $accent-color;
+  }
 }

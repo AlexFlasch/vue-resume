@@ -1,24 +1,32 @@
 <template>
-  <section>
-    <slot></slot>
-  </section>
+  <div class="page">
+    <Header />
+    <About />
+    <Skills />
+    <CareerHistory />
+  </div>
 </template>
 
 <script>
+import Header from './components/Header';
+import About from './components/About';
+import Skills from './components/Skills';
+import CareerHistory from './components/CareerHistory';
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'Page1',
+  components: {
+    Header,
+    About,
+    Skills,
+    CareerHistory
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-section {
+<style lang="scss" scoped>
+.page {
   width: 9.5in;
-  height: 11in;
   background-color: white;
-  box-sizing: border-box;
 }
 </style>

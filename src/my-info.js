@@ -17,11 +17,57 @@ export default {
         'Client: Foundry Interactive - Long term client relationship encompassing multiple projects in B2B client services digital agency. Supported team of junior developers as the first line of escalation for technical issues.',
       projects: [
         {
+          name: 'React Dashboard Project',
+          timeperiod: '2019 - Ongoing',
+          position: 'React Developer',
+          description:
+            'Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.',
+          platform: '',
+          url: ''
+        },
+        {
+          name: 'React Legaltech Project',
+          timeperiod: '2018 - 2019',
+          position: 'React Developer',
+          description:
+            'Integrated front end to a complex machine learning back end, meeting design and user experience requirements.',
+          platform: '',
+          url: ''
+        },
+        {
           name: 'UI Rebrand Project',
           timeperiod: '2017 - 2019',
           position: 'Project Lead',
           description:
-            'Navigated complex legacy systems to provide a project plan for developers, ',
+            'Navigated complex legacy systems to provide a project plan for developers. Lead technical efforts to achieve branding compliance.',
+          platform: '',
+          url: ''
+        },
+        {
+          name: 'WordPress Project',
+          timeperiod: '2017',
+          position: 'Full Stack Developer',
+          description:
+            "Refreshed and extended existing client site to better showcase client's products.",
+          platform: '',
+          url: ''
+        }
+      ]
+    },
+    {
+      company: 'MIO',
+      location: 'Oshkosh, WI',
+      position: 'Full Stack Developer',
+      timeperiod: 'August 2014 - May 2017',
+      description:
+        'Developed complex web applications to serve the residents and staff of the University of Wisconsin-Oshkosh.',
+      projects: [
+        {
+          name: 'React Dashboard Project',
+          timeperiod: '2019 - Ongoing',
+          position: 'React Developer',
+          description:
+            'Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.',
           platform: '',
           url: ''
         }
