@@ -63,22 +63,49 @@ export default {
         'Developed complex web applications to serve the residents and staff of the University of Wisconsin-Oshkosh.',
       projects: [
         {
-          name: 'React Dashboard Project',
-          timeperiod: '2019 - Ongoing',
-          position: 'React Developer',
+          name: 'MyUWO Portal',
+          timeperiod: '2014 - 2017',
+          position: 'Full Stack Developer',
           description:
-            'Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.',
+            'Create complex web applications to serve the needs of residents and staff of the University of Wisconsin-Oshkosh using AngularJS, ASP.NET MVC, and MSSQL',
+          platform: '',
+          url: ''
+        },
+        {
+          name: 'MyUWO Portal (Legacy)',
+          timeperiod: '2014 -2017',
+          position: 'Full Stack Developer',
+          description:
+            'Maintain and update legacy web applications created with jQuery, ASP.NET MVC, and MSSQL',
           platform: '',
           url: ''
         }
       ]
     }
   ],
+  projects: [
+    {
+      name: 'Mandachordshare',
+      description:
+        'A web application intended to be a hub for players of Warframe to create and share songs made on the in-game mandachord instrument.',
+      stack: 'React.js, Next.js, GraphQL, Postgres',
+      status: 'Nearing MVP status, under active development',
+      url: 'https://github.com/AlexFlasch/mandachordshare'
+    },
+    {
+      name: 'Inline Exterminator',
+      description:
+        'A Node.js CLI tool created to aid the UI Rebrand project. Automatically removes inline styles from HTML and moves them to an external stylesheet with auto-generated class names. Licensed under MIT',
+      stack: 'Node.js',
+      status: 'Stable release, under maintenance',
+      url: 'https://github.com/AlexFlasch/inline-exterminator'
+    }
+  ],
   education: [
     {
       degree: 'Baccalaureate of Science',
       school: 'University of Wisconsin-Oshkosh, Oshkosh, WI',
-      timeperiod: 'March 2012 - December 2013',
+      timeperiod: 'September 2012 - May 2017',
       description: 'Computer Science, Software Engineering emphasis'
     }
   ],
@@ -115,7 +142,7 @@ export default {
   references: [
     {
       name: 'Sheree Peña',
-      position: 'Director of Test',
+      position: 'Director of Test at Foundry Interactive',
       email: 'sheree@foundryinteractive.com',
       phone: ''
     },

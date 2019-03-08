@@ -20,7 +20,7 @@ const performPageBreak = el => {
 
     const pageBreakEl = document.createElement('div');
     pageBreakEl.className = 'page-break';
-    pageBreakEl.style.height = '25px';
+    pageBreakEl.style.height = '0';
     pageBreakEl.style.width = '1000%';
     pageBreakEl.style.backgroundColor = '#333';
     pageBreakEl.style.marginTop = `${pageBreakMargin}px`;

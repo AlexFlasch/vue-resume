@@ -4,6 +4,9 @@
     <About />
     <Skills />
     <CareerHistory />
+    <Projects />
+    <Education />
+    <References />
   </div>
 </template>
 
@@ -12,6 +15,9 @@ import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import CareerHistory from './components/CareerHistory';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import References from './components/References';
 
 export default {
   name: 'Page1',
@@ -19,7 +25,10 @@ export default {
     Header,
     About,
     Skills,
-    CareerHistory
+    CareerHistory,
+    Projects,
+    Education,
+    References
   }
 };
 </script>
