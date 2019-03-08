@@ -143,8 +143,8 @@ export default {
     {
       name: 'Sheree Peña',
       position: 'Director of Test at Foundry Interactive',
-      email: 'sheree@foundryinteractive.com',
-      phone: ''
+      email: 'shereemaria@gmail.com',
+      phone: '(206) 380-5738'
     },
     {
       name: 'Emily Al Bulushi',
