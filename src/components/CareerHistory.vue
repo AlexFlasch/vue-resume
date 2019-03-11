@@ -102,7 +102,6 @@ h2 {
 }
 
 .project-description {
-  text-indent: 10px;
   padding-left: 15px;
 }
 </style>

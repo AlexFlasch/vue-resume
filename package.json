@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pdf": "node scripts/convert-to-pdf.js"
   },
   "dependencies": {
     "convert-length": "^1.0.1",
@@ -21,6 +22,8 @@
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^3.1.1",
     "lint-staged": "^8.1.0",
+    "puppeteer": "^1.13.0",
+    "rxjs": "^6.4.0",
     "sass": "^1.16.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"

@@ -110,34 +110,42 @@ export default {
     }
   ],
   skills: [
-    {
-      name: 'Languages (Spoken)',
-      points: ['English (mother tongue)', 'French(semi - fluent)']
-    },
-    {
-      name: 'Languages (Programming)',
-      points: [
-        'Javascript (ES6+)',
-        'HTML5',
-        'CSS3 / Sass',
-        'C#',
-        'MSSQL',
-        'Java'
-      ]
-    },
-    {
-      name: 'Software',
-      points: [
-        'Webpack',
-        'Git',
-        'Chrome Devtools',
-        'Visual Studio',
-        'VSCode',
-        'React.js',
-        'Vue.js',
-        'AngularJS'
-      ]
-    }
+    // {
+    //   name: 'Languages (Spoken)',
+    //   points: ['English (mother tongue)', 'French(semi - fluent)']
+    // },
+    // {
+    //   name: 'Languages (Programming)',
+    //   points: ['Javascript (ES6+)', 'Sass', 'C# /.NET MVC', 'MSSQL', 'Java']
+    // },
+    // {
+    //   name: 'Software',
+    //   points: [
+    //     'Webpack',
+    //     'Git',
+    //     'Wordpress',
+    //     'Node.js',
+    //     'Express.js',
+    //     'React.js',
+    //     'Vue.js',
+    //     'AngularJS'
+    //   ]
+    // }
+    'Javascript (ES6+)',
+    'HTML5',
+    'CSS3',
+    'Sass',
+    'C# /.NET MVC',
+    'MSSQL',
+    'Java',
+    'Webpack',
+    'Git',
+    'Wordpress',
+    'Node.js',
+    'Express.js',
+    'React.js',
+    'Vue.js',
+    'AngularJS'
   ],
   references: [
     {
@@ -154,7 +162,7 @@ export default {
     }
   ],
   contact: {
-    address: '312 2nd Ave W, Seattle, WA 98119',
+    address: 'Seattle, WA 98119',
     email: 'alexanderflasch@email.com',
     phone: '(920) 266-2201',
     website: 'https://alexflasch.com',

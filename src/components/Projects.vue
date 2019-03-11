@@ -51,7 +51,6 @@ h2 {
 p {
   margin: 0;
   padding: 2px 0 0 10px;
-  text-indent: 10px;
 }
 
 .projects {
@@ -69,7 +68,6 @@ p.project-name {
   font-weight: bold;
   width: 25%;
   padding: 0;
-  text-indent: 0;
 }
 
 .project-stack {

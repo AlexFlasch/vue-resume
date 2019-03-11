@@ -32,8 +32,4 @@ export default {
 section {
   padding: 10px 25px;
 }
-
-p.about-section {
-  text-indent: 10px;
-}
 </style>

@@ -4,14 +4,12 @@
       Skills
     </h2>
     <div class="skills">
-      <div v-for="(skill, index) in info.skills" :key="index">
-        <span class="skill-name">{{ skill.name }}</span>
-        <ul>
-          <li v-for="(point, index) in skill.points" :key="index">
-            {{ point }}
-          </li>
-        </ul>
-      </div>
+      <!-- <div class="skill-type" v-for="(skill, index) in info.skills" :key="index"> -->
+        <!-- <span class="skill-name">{{ skill.name }}</span> -->
+      <span v-for="(skill, index) in info.skills" :key="index">
+        {{ skill.concat(index < Object.keys(info.skills).length - 1 ? ',' : '')}}
+      </span>
+      <!-- </div> -->
     </div>
   </section>
 </template>
@@ -37,28 +35,20 @@ h2 {
 }
 
 .skills {
-  $number-of-subsections: 3;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 10px 25px;
 
-  div {
-    width: calc(100% / #{$number-of-subsections});
+  .skill-type {
+    display: inline;
+  }
+
+  .skill {
+    padding: 0 5px;
   }
 
   .skill-name {
     @include subsection-underline(10px);
     padding: 0 10px;
     font-weight: bold;
-  }
-
-  ul {
-    margin-left: 10px;
-  }
-
-  li {
-    padding-left: 15px;
   }
 }
 </style>
