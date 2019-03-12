@@ -14,6 +14,17 @@
   }
 }
 
+@mixin faded-underline($color) {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent 10%, $color 100%);
+  }
+}
+
 @mixin section-underline($size: 15px, $width: 35%, $color: $accent-color) {
   position: relative;
   width: $width;
@@ -29,8 +40,10 @@
   border-width: 0;
   border-bottom-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(to right, transparent 10%, $color 100%) 1 100%;
-  border-image-slice: 1;
+  border-color: $color;
+  // border-image: linear-gradient(to right, transparent 10%, $color 100%) 1 100%;
+  // border-image-slice: 1;
 
+  // @include faded-underline($color);
   @include border-triangle($size, $color);
 }

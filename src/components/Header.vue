@@ -2,9 +2,9 @@
   <header>
     <div class="main-details">
       <h1 class="name">{{ info.name.first }} {{ info.name.last }}</h1>
-      <span class="position">
+      <h2 class="position">
         {{ info.position }}
-      </span>
+      </h2>
       <span class="address">
         {{ info.contact.address }}
       </span>
@@ -63,6 +63,7 @@ header {
 }
 
 .position {
+  display: inline;
   font-weight: bold;
   font-size: 1.25em;
 }

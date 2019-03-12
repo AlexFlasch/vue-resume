@@ -5,9 +5,9 @@
     </h2>
     <div class="skills">
       <!-- <div class="skill-type" v-for="(skill, index) in info.skills" :key="index"> -->
-        <!-- <span class="skill-name">{{ skill.name }}</span> -->
+      <!-- <span class="skill-name">{{ skill.name }}</span> -->
       <span v-for="(skill, index) in info.skills" :key="index">
-        {{ skill.concat(index < Object.keys(info.skills).length - 1 ? ',' : '')}}
+        {{ getListSeparator(skill, index) }}
       </span>
       <!-- </div> -->
     </div>
@@ -23,11 +23,19 @@ export default {
     return {
       info: myInfo
     };
+  },
+  methods: {
+    getListSeparator(skill, index) {
+      return skill.concat(
+        index < Object.keys(this.info.skills).length - 1 ? ',' : ''
+      );
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/_base.scss';
 @import '../styles/_mixins.scss';
 
 h2 {

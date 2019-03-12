@@ -1,5 +1,11 @@
 @import '_variables.scss';
 
+h1,
+h2 {
+  font-family: 'Lato';
+  font-weight: 700;
+}
+
 a,
 a:link {
   font: inherit;

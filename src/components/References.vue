@@ -24,7 +24,7 @@ export default {
   name: 'References',
   data() {
     return {
-      info: myInfo,
+      info: myInfo
     };
   }
 };
