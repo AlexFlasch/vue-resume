@@ -9,16 +9,39 @@ export default {
   position: 'Software Developer',
   experience: [
     {
+      company: 'Enthusiast Enterprises',
+      location: 'Appleton, WI',
+      position: 'Web Developer',
+      timeperiod: 'October 2020 - Present',
+      description: 'Lead company-wide React front end migration effort.',
+      projects: [
+        {
+          name: 'Enthusiast Enterprises Component Library',
+          timeperiod: '2020 - Present',
+          description:
+            'Build, own, and maintain custom component library that helps maintain consistency between brands, while remaining flexible enough for every brand to maintain a separate identity.',
+          platform: '',
+          url: ''
+        },
+        {
+          name: 'SD Wheel Wholesale',
+          timeperiod: '2021 - Present',
+          description:
+            'Create app architecture for new wholesale site. Mentor developers learning React, and write and deploy critical features or bug fixes.'
+        }
+      ]
+    },
+    {
       company: 'Freelance Consultant',
       location: 'Seattle, WA',
       position: 'Web Developer',
-      timeperiod: 'September 2017 - Ongoing',
+      timeperiod: 'September 2017 - December 2019',
       description:
         'Client: Foundry Interactive - Long term client relationship encompassing multiple projects in B2B client services digital agency. Supported team of junior developers as the first line of escalation for technical issues.',
       projects: [
         {
           name: 'React Dashboard Project',
-          timeperiod: '2019 - Ongoing',
+          timeperiod: '2019',
           position: 'React Developer',
           description:
             'Investigate and implement front end stories to design with user experience as a priority. Understand and own issues that arise to present possible solutions.',
@@ -145,7 +168,11 @@ export default {
     'Express.js',
     'React.js',
     'Vue.js',
-    'AngularJS'
+    'AngularJS',
+    'Github Actions',
+    'AWS CodeBuild',
+    'AWS CodePipeline',
+    'AWS S3'
   ],
   references: [
     {
@@ -162,8 +189,8 @@ export default {
     }
   ],
   contact: {
-    address: 'Seattle, WA 98119',
-    email: 'alexanderflasch@email.com',
+    address: 'Seattle, WA 98109',
+    email: 'alexanderflasch@gmail.com',
     phone: '(920) 266-2201',
     website: 'https://alexflasch.com',
     github: 'AlexFlasch'
