@@ -106,6 +106,6 @@ h2 {
 
 /* ----- STYLES THAT NEED ADJUSTING WHENEVER CONTENT CHANGES ARE MADE ----- */
 .employer:last-of-type {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 </style>
