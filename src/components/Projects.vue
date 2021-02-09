@@ -6,7 +6,6 @@
         class="project"
         v-for="(project, index) in info.projects"
         :key="index"
-        v-page-breakable
       >
         <p class="project-name">{{ project.name }}</p>
         <p class="project-description">{{ project.description }}</p>

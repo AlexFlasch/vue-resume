@@ -4,7 +4,6 @@
     <div class="employers">
       <div
         class="employer"
-        v-page-breakable
         v-for="(employer, index) in info.experience"
         :key="index"
       >
@@ -103,5 +102,10 @@ h2 {
 
 .project-description {
   padding-left: 15px;
+}
+
+/* ----- STYLES THAT NEED ADJUSTING WHENEVER CONTENT CHANGES ARE MADE ----- */
+.employer:last-of-type {
+  margin-top: 150px;
 }
 </style>

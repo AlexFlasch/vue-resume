@@ -189,7 +189,7 @@ export default {
     }
   ],
   contact: {
-    address: 'Seattle, WA 98109',
+    address: 'Fond du Lac, WI 54937',
     email: 'alexanderflasch@gmail.com',
     phone: '(920) 266-2201',
     website: 'https://alexflasch.com',

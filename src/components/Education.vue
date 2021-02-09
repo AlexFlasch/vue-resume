@@ -5,7 +5,6 @@
       class="education"
       v-for="(entry, index) in info.education"
       :key="index"
-      v-page-breakable
     >
       <p class="education-school">{{ entry.school }}</p>
       <div class="education-details">
@@ -45,7 +44,7 @@ p {
 }
 
 .education {
-  padding-left: 20px;
+  padding: 10px 20px;
 }
 
 .education-school {

@@ -5,7 +5,6 @@
       class="reference"
       v-for="(reference, index) in info.references"
       :key="index"
-      v-page-breakable
     >
       <p class="reference-name">{{ reference.name }}</p>
       <div class="reference-details">
@@ -36,6 +35,8 @@ export default {
 
 h2 {
   @include section-underline();
+
+  padding-top: 5px;
 }
 
 p {
