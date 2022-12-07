@@ -21,7 +21,7 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^3.1.1",
-    "lint-staged": "^8.1.0",
+    "lint-staged": "^13.1.0",
     "puppeteer": "^1.13.0",
     "rxjs": "^6.4.0",
     "sass": "^1.16.0",
